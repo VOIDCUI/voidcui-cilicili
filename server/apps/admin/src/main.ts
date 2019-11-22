@@ -10,6 +10,7 @@ async function bootstrap() {
     .setDescription('供后台管理界面调用的公共api')
     .setVersion('1.0')
     .build();
+    
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('api-desc', app, document);
   await app.listen(3000);
